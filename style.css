@@ -1,4 +1,5 @@
 :root {
+  --black: #111;
   --dark: #333;
   --gray: #ccc;
   --light: #eee;
@@ -7,9 +8,11 @@
   --brown-dk: #4c1a03;
   --green: #2cb42c;
   --orange: #ff4500;
+  --red: #9d0707;
   --blue: #4949e3;
   --gold: #b8a90a;
   --test-colour: #d2b48c; 
+  --bord-r: 50%;
 }
 
 body {
@@ -27,3 +30,37 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
+.shelf {
+  width: 520px;
+  height: 20px;
+  background-color: var(--brown-dk);
+  position: relative;
+}
+
+.clock, .knot, .hand, 
+.clock-ear-left, .clock-ear-right,
+.clock-foot-left, .clock-foot-right {
+  position: absolute;
+}
+
+.clock {
+  width: 110px;
+  height: 110px;
+  background-color: var(--light);
+  border: 10px solid var(--red);
+  border-radius: var(--bord-r);
+  left: 30px;
+  top: -135px;
+}
+
+.knot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--black);
+  border-radius: var(--bord-r);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
