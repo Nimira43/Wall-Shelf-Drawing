@@ -1,3 +1,17 @@
+:root {
+  --dark: #333;
+  --gray: #ccc;
+  --light: #eee;
+  --brown-lg: #c56520;
+  --brown-md: #8b4513;
+  --brown-dk: #4c1a03;
+  --green: #2cb42c;
+  --orange: #ff4500;
+  --blue: #4949e3;
+  --gold: #b8a90a;
+  --test-colour: #d2b48c; 
+}
+
 body {
   width: 100%;
   height: 100vh;
